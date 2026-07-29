@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML + JS Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        header, footer { background: rgb(119, 0, 255); padding: 10px; text-align: center; }
+        main { margin: 20px 0; }
+        button { padding: 8px 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Tags -->
+    <header>
+        <h1>WELCOME TO KL PAGE</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This paragraph will be updated by JavaScript.</p>
+            <button onclick="runJS()">Click Me</button>
+        </section>
+
+        <section id="about">
+            <h2>About Section</h2>
+            <div id="output"></div>
+        </section>
+         <table border="5" style="margin: auto; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Course_Code</th>
+                    <th>Subject_Name</th>
+                    <th>Course_Faculty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25SC2008</td>
+                    <td>Full Stack Web Development</td>
+                    <td>Mr. Dineshnath.G</td>
+                </tr>
+                <tr>
+                    <td>24SDCS02</td>
+                    <td>Full Stack Application Development</td>
+                    <td>Mr. Dineshnath.G</td>
+                </tr>
+                <tr>
+                    <td>23SDC02A</td>
+                    <td>Service Oriented Architecture using Microservices</td>
+                    <td>Mr. Dineshnath.G</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+ 
+    <footer>
+        <p>&copy; 2026 KLU</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
